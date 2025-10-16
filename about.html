@@ -1,0 +1,136 @@
+# Create about.html (About Page)
+about_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - YogiEats</title>
+    <meta name="description" content="Learn about Yogi's journey into mindful eating, yoga philosophy, and the mission behind YogiEats.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav-container">
+                <div class="logo">YogiEats</div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title">About YogiEats</h1>
+            
+            <!-- Author Image -->
+            <div class="text-center mb-2">
+                <img src="https://placehold.co/600x400/84A98C/FFFFFF?text=Yogi+in+Kitchen" alt="Yogi cooking in the kitchen" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+            </div>
+
+            <!-- Our Story Section -->
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2>Our Story</h2>
+                <p>Welcome to YogiEats, where mindful eating meets conscious living. My name is Yogi, and I'm passionate about the transformative power of food when approached with intention, gratitude, and awareness. This blog was born from my personal journey of discovering how the ancient wisdom of yoga philosophy can beautifully intertwine with modern nutritional wisdom.</p>
+
+                <p>My path to mindful eating began during my early years of yoga practice. As I deepened my understanding of the eight limbs of yoga, I realized that nourishing the body was just as important as nourishing the mind and spirit. The practice of ahimsa (non-violence) naturally led me toward a plant-based lifestyle, while the principle of santosha (contentment) taught me to find joy and satisfaction in simple, whole foods.</p>
+
+                <h2>My Philosophy</h2>
+                <p>At YogiEats, we believe that cooking is a form of meditation, eating is a practice of gratitude, and sharing meals is an act of love. Every recipe I share is created with the intention of nourishing not just your body, but your entire being. We focus on vegetarian and vegan dishes that are rich in prana (life force energy) and free from violence toward our fellow beings.</p>
+
+                <p>Our approach to food is rooted in the yogic principle of sattva - purity, balance, and harmony. Sattvic foods are those that are fresh, seasonal, locally sourced when possible, and prepared with love and mindfulness. These foods not only support physical health but also promote mental clarity and spiritual well-being.</p>
+
+                <p>I believe that the kitchen can be our temple, and cooking can be our prayer. When we approach food preparation with mindfulness and intention, we transform simple ingredients into powerful medicine for body and soul. Each recipe I share comes not just with instructions, but with the deeper understanding of how food can support our overall wellness journey.</p>
+
+                <h2>What You'll Find Here</h2>
+                <p>On YogiEats, you'll discover a collection of plant-based recipes that honor both tradition and innovation. From ancient Ayurvedic preparations to modern superfood creations, every dish is designed to support your yoga practice and overall well-being. You'll also find tips on mindful eating, seasonal eating practices, and how to create a more conscious relationship with food.</p>
+
+                <p>Whether you're a seasoned yogi or just beginning to explore the connection between food and consciousness, you'll find recipes and wisdom that meet you exactly where you are on your journey. My goal is to make healthy, conscious eating accessible, enjoyable, and deeply satisfying.</p>
+
+                <!-- Get In Touch Section -->
+                <div class="section" style="background-color: var(--secondary-accent); padding: 2rem; border-radius: 10px; margin-top: 3rem; text-align: center;">
+                    <h3>Get In Touch</h3>
+                    <p>I'd love to connect with you and hear about your own journey with mindful eating and conscious living. Whether you have questions about a recipe, want to share your own creations, or simply want to say namaste, I'm here for you.</p>
+                    <a href="contact.html" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Brand -->
+                <div>
+                    <h4>YogiEats</h4>
+                    <p>Nourishing your journey to wellness through mindful eating and conscious living. One recipe at a time.</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Legal -->
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 YogiEats. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>"""
+
+print("✅ about.html created successfully!")
+print(f"Length: {len(about_html)} characters")
