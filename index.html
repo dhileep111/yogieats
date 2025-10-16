@@ -1,106 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ## Document Metadata ## -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YogiEats - Nourish Your Body, Calm Your Mind</title>
-    <meta name="description" content="Discover wholesome vegetarian recipes for a balanced life. Join Yogi on a journey of mindful eating and wellness.">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Discover wholesome vegetarian recipes for a balanced and mindful life on YogiEats.">
+    
+    <!-- ## Google Fonts ## -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ## Internal Stylesheet ## -->
+    <style>
+        /* --- CSS Reset & Variables --- */
+        :root {
+            --primary-color: #52796F; /* Deep Green */
+            --secondary-color: #84A98C; /* Lighter Green */
+            --background-color: #F7F7F7; /* Off-white */
+            --text-color: #354F52; /* Dark Greenish Blue */
+            --white-color: #FFFFFF;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease-in-out;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* --- General & Utility Classes --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+        
+        h1, h2, h3 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 { font-size: 3rem; font-weight: 700; }
+        h2 { font-size: 2.2rem; font-weight: 600; text-align: center;}
+        h3 { font-size: 1.5rem; font-weight: 600; }
+        
+        section {
+            padding: 60px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* ================== */
+        /* HEADER        */
+        /* ================== */
+        .header {
+            background-color: var(--white-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--text-color);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+
+        /* ================== */
+        /* MAIN CONTENT     */
+        /* ================== */
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+            background-color: var(--white-color);
+        }
+
+        .hero h1 {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* --- Featured Recipes Section --- */
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .recipe-card {
+            background-color: var(--white-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .recipe-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-content p {
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .card-content a {
+            font-weight: 600;
+        }
+
+        /* --- About Me Snippet --- */
+        .about-snippet {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background-color: var(--white-color);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .about-snippet img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--secondary-color);
+        }
+        
+        .bio p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* ================== */
+        /* FOOTER        */
+        /* ================== */
+        .footer {
+            background-color: var(--text-color);
+            color: var(--background-color);
+            padding: 50px 0 20px 0;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3, .footer-column h4 {
+            margin-bottom: 1rem;
+            color: var(--white-color);
+        }
+        
+        .footer-column p, .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column a {
+            color: var(--secondary-color);
+        }
+
+        .footer-column a:hover {
+            color: var(--white-color);
+            text-decoration: underline;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        /* ================== */
+        /* RESPONSIVENESS   */
+        /* ================== */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 85px;
+                right: 0;
+                width: 100%;
+                background-color: var(--white-color);
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                padding: 20px;
+                text-align: center;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+            
+            .about-snippet {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- ================== -->
+    <!--      HEADER        -->
+    <!-- ================== -->
     <header class="header">
-        <nav class="container">
-            <div class="nav-container">
-                <div class="logo">YogiEats</div>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <div class="container">
+            <a href="index.html" class="logo">YogiEats</a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Nourish Your Body, Calm Your Mind</h1>
-            <p>Discover wholesome vegetarian recipes for a balanced life</p>
-            <a href="blog.html" class="btn btn-primary">Explore Recipes</a>
-        </div>
-    </section>
+    <!-- ================== -->
+    <!--   MAIN CONTENT     -->
+    <!-- ================== -->
+    <main>
 
-    <!-- Featured Recipes Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Latest Recipes</h2>
-            <div class="grid grid-3">
-                <!-- Recipe Card 1 -->
-                <article class="card fade-in">
-                    <img src="https://placehold.co/400x300/84A98C/FFFFFF?text=Smoothie+Bowl" alt="Mindful Morning Smoothie Bowl">
-                    <div class="card-content">
-                        <h3>Mindful Morning Smoothie Bowl</h3>
-                        <p>Start your day with this nutrient-packed smoothie bowl that combines fresh fruits with superfoods for sustained energy and mental clarity.</p>
-                        <a href="posts/sample-post.html" class="btn btn-secondary">Read More</a>
-                    </div>
-                </article>
-
-                <!-- Recipe Card 2 -->
-                <article class="card fade-in">
-                    <img src="https://placehold.co/400x300/52796F/FFFFFF?text=Zen+Salad" alt="Zen Garden Salad">
-                    <div class="card-content">
-                        <h3>Zen Garden Salad</h3>
-                        <p>A colorful, crunchy salad that brings peace to your plate with every bite of fresh vegetables, herbs, and mindful preparation.</p>
-                        <a href="posts/sample-post.html" class="btn btn-secondary">Read More</a>
-                    </div>
-                </article>
-
-                <!-- Recipe Card 3 -->
-                <article class="card fade-in">
-                    <img src="https://placehold.co/400x300/CAD2C5/333333?text=Tea+Blend" alt="Meditation Tea Blend">
-                    <div class="card-content">
-                        <h3>Meditation Tea Blend</h3>
-                        <p>Create your own calming tea blend with herbs that promote relaxation, mindful presence, and inner peace throughout your day.</p>
-                        <a href="posts/sample-post.html" class="btn btn-secondary">Read More</a>
-                    </div>
-                </article>
+        <!-- ## Hero Section ## -->
+        <section class="hero">
+            <div class="container">
+                <h1>Nourish Your Body, Calm Your Mind</h1>
+                <p>Discover wholesome vegetarian recipes for a balanced and mindful life.</p>
+                <a href="blog.html" class="cta-button">Explore Recipes</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Me Snippet -->
-    <section class="section" style="background-color: var(--white);">
-        <div class="container">
-            <div class="about-snippet">
-                <img src="https://placehold.co/150x150/84A98C/FFFFFF?text=Yogi" alt="Yogi - Blog Author" class="about-image">
-                <div>
-                    <h3>Meet Yogi</h3>
-                    <p>Hi, I'm Yogi! Join me on a journey to discover the joy of mindful eating and living a healthier, more vibrant life. Through yoga, meditation, and wholesome cooking, I believe we can nourish not just our bodies, but our souls too.</p>
-                    <a href="about.html" class="btn btn-primary">More About Me</a>
+        <!-- ## Featured Recipes Section ## -->
+        <section class="featured-recipes">
+            <div class="container">
+                <h2>Latest Recipes</h2>
+                <div class="recipe-grid">
+                    
+                    <!-- Recipe Card 1 -->
+                    <article class="recipe-card">
+                        <img src="https://placehold.co/400x300/84A98C/FFFFFF?text=Smoothie+Bowl" alt="A vibrant and healthy smoothie bowl.">
+                        <div class="card-content">
+                            <h3>Mindful Morning Smoothie Bowl</h3>
+                            <p>A vibrant and nutrient-packed smoothie bowl to start your day with energy and intention.</p>
+                            <a href="posts/sample-post.html">Read More &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Recipe Card 2 -->
+                    <article class="recipe-card">
+                        <img src="https://placehold.co/400x300/52796F/FFFFFF?text=Zen+Salad" alt="A colorful and fresh garden salad.">
+                        <div class="card-content">
+                            <h3>Zen Garden Salad</h3>
+                            <p>A fresh, crunchy salad with a light vinaigrette, perfect for a mindful and refreshing lunch.</p>
+                            <a href="posts/sample-post.html">Read More &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Recipe Card 3 -->
+                    <article class="recipe-card">
+                        <img src="https://placehold.co/400x300/CAD2C5/354F52?text=Lentil+Soup" alt="A warm bowl of hearty lentil soup.">
+                        <div class="card-content">
+                             <h3>Cozy Lentil Soup</h3>
+                            <p>Warm your soul with this simple, hearty, and deeply nourishing lentil soup recipe.</p>
+                            <a href="posts/sample-post.html">Read More &rarr;</a>
+                        </div>
+                    </article>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <!-- ## About Me Snippet ## -->
+        <section class="about-section">
+            <div class="container">
+                 <div class="about-snippet">
+                    <img src="https://placehold.co/150x150/52796F/FFFFFF?text=Yogi" alt="Yogi, the author" class="author-image">
+                    <div class="bio">
+                        <h3>Meet Yogi</h3>
+                        <p>Hi, I'm Yogi! Join me on a journey to discover the joy of mindful eating and living a healthier, more vibrant life through wholesome, delicious vegetarian food.</p>
+                        <a href="about.html" class="cta-button">More About Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================== -->
+    <!--      FOOTER        -->
+    <!-- ================== -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-container">
                 <!-- Column 1: Brand -->
-                <div>
-                    <h4>YogiEats</h4>
-                    <p>Nourishing your journey to wellness through mindful eating and conscious living. One recipe at a time.</p>
+                <div class="footer-column">
+                    <h3>YogiEats</h3>
+                    <p>Mindful eating for a vibrant life.</p>
                 </div>
-
+                
                 <!-- Column 2: Quick Links -->
-                <div>
+                <div class="footer-column">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -109,9 +445,9 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
+                
                 <!-- Column 3: Legal -->
-                <div>
+                <div class="footer-column">
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
@@ -119,57 +455,22 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
+            <div class="copyright">
                 <p>&copy; 2025 YogiEats. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Navigation -->
+    <!-- ## JavaScript for Mobile Navigation ## -->
     <script>
-        // Mobile navigation toggle
         const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.getElementById('nav-links');
 
         hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-                navMenu.classList.remove('active');
-            }
-        });
-
-        // Add fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeIn 0.6s ease-out forwards';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
         });
     </script>
 </body>
-</html>"""
+</html>
 
-print("✅ index.html created successfully!")
-print(f"Length: {len(index_html)} characters")
