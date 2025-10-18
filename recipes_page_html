@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<!--
+    Yogi Eats - Recipes Page
+-->
+<html>
+    <head>
+        <title>Recipes - Yogi Eats</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="Browse our collection of healthy vegetarian recipes, from Buddha bowls to Indian thalis." />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo">Yogi Eats</a>
+                    </header>
+
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="recipes.html">Recipes</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="wellness.html">Wellness Tips</a></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+                            <li><a href="#" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        </ul>
+                    </nav>
+
+                <!-- Main -->
+                    <div id="main">
+
+                        <!-- Page Header -->
+                        <header class="major">
+                            <h1>All Recipes</h1>
+                            <p>Explore our collection of nutritious, delicious vegetarian recipes</p>
+                        </header>
+
+                        <!-- Recipe Categories -->
+                        <section>
+                            <h2>Browse by Category</h2>
+                            <ul class="actions">
+                                <li><a href="#breakfast" class="button">Breakfast</a></li>
+                                <li><a href="#bowls" class="button">Buddha Bowls</a></li>
+                                <li><a href="#indian" class="button">Indian Cuisine</a></li>
+                                <li><a href="#snacks" class="button">Snacks</a></li>
+                                <li><a href="#desserts" class="button">Desserts</a></li>
+                            </ul>
+                        </section>
+
+                        <!-- All Recipe Posts -->
+                            <section class="posts">
+
+                                <!-- Recipe 1 -->
+                                <article>
+                                    <header>
+                                        <span class="date">October 18, 2025</span>
+                                        <h2><a href="post-rainbow-bowl.html">Rainbow Buddha Bowl</a></h2>
+                                    </header>
+                                    <a href="post-rainbow-bowl.html" class="image fit"><img src="images/rainbow-bowl.jpg" alt="" /></a>
+                                    <p>Vibrant quinoa bowl with colorful vegetables and tahini dressing.</p>
+                                    <ul class="actions special">
+                                        <li><a href="post-rainbow-bowl.html" class="button">View Recipe</a></li>
+                                    </ul>
+                                </article>
+
+                                <!-- Recipe 2 -->
+                                <article>
+                                    <header>
+                                        <span class="date">October 15, 2025</span>
+                                        <h2><a href="post-smoothie-bowl.html">Green Smoothie Bowl</a></h2>
+                                    </header>
+                                    <a href="post-smoothie-bowl.html" class="image fit"><img src="images/smoothie-bowl.jpg" alt="" /></a>
+                                    <p>Energizing breakfast bowl packed with greens and fresh fruits.</p>
+                                    <ul class="actions special">
+                                        <li><a href="post-smoothie-bowl.html" class="button">View Recipe</a></li>
+                                    </ul>
+                                </article>
+
+                                <!-- Recipe 3 -->
+                                <article>
+                                    <header>
+                                        <span class="date">October 12, 2025</span>
+                                        <h2><a href="post-indian-thali.html">Vegetarian Thali</a></h2>
+                                    </header>
+                                    <a href="post-indian-thali.html" class="image fit"><img src="images/indian-thali.jpg" alt="" /></a>
+                                    <p>Traditional Indian feast with dal, curry, and fresh roti.</p>
+                                    <ul class="actions special">
+                                        <li><a href="post-indian-thali.html" class="button">View Recipe</a></li>
+                                    </ul>
+                                </article>
+
+                                <!-- Recipe 4 -->
+                                <article>
+                                    <header>
+                                        <span class="date">October 10, 2025</span>
+                                        <h2><a href="post-avocado-toast.html">Avocado Toast Variations</a></h2>
+                                    </header>
+                                    <a href="post-avocado-toast.html" class="image fit"><img src="images/avocado-toast.jpg" alt="" /></a>
+                                    <p>Gourmet avocado toast with creative, healthy toppings.</p>
+                                    <ul class="actions special">
+                                        <li><a href="post-avocado-toast.html" class="button">View Recipe</a></li>
+                                    </ul>
+                                </article>
+
+                                <!-- Recipe 5 -->
+                                <article>
+                                    <header>
+                                        <span class="date">October 8, 2025</span>
+                                        <h2><a href="post-wellness-bowl.html">Protein Wellness Bowl</a></h2>
+                                    </header>
+                                    <a href="post-wellness-bowl.html" class="image fit"><img src="images/wellness-bowl.jpg" alt="" /></a>
+                                    <p>Complete meal with tofu, fresh vegetables, and wholesome grains.</p>
+                                    <ul class="actions special">
+                                        <li><a href="post-wellness-bowl.html" class="button">View Recipe</a></li>
+                                    </ul>
+                                </article>
+
+                                <!-- Recipe 6 -->
+                                <article>
+                                    <header>
+                                        <span class="date">October 1, 2025</span>
+                                        <h2><a href="post-north-indian-thali.html">North Indian Thali</a></h2>
+                                    </header>
+                                    <a href="post-north-indian-thali.html" class="image fit"><img src="images/north-indian-thali.jpg" alt="" /></a>
+                                    <p>Ready in 40 minutes with paneer, dal, and crispy pakoras.</p>
+                                    <ul class="actions special">
+                                        <li><a href="post-north-indian-thali.html" class="button">View Recipe</a></li>
+                                    </ul>
+                                </article>
+
+                                <!-- Recipe 7 -->
+                                <article>
+                                    <header>
+                                        <span class="date">September 28, 2025</span>
+                                        <h2><a href="post-chia-pudding.html">Overnight Chia Pudding</a></h2>
+                                    </header>
+                                    <a href="post-chia-pudding.html" class="image fit"><img src="images/chia-pudding.jpg" alt="" /></a>
+                                    <p>Easy make-ahead breakfast with coconut milk and berries.</p>
+                                    <ul class="actions special">
+                                        <li><a href="post-chia-pudding.html" class="button">View Recipe</a></li>
+                                    </ul>
+                                </article>
+
+                                <!-- Recipe 8 -->
+                                <article>
+                                    <header>
+                                        <span class="date">September 25, 2025</span>
+                                        <h2><a href="post-lentil-soup.html">Healing Lentil Soup</a></h2>
+                                    </header>
+                                    <a href="post-lentil-soup.html" class="image fit"><img src="images/lentil-soup.jpg" alt="" /></a>
+                                    <p>Warming, protein-rich soup perfect for any season.</p>
+                                    <ul class="actions special">
+                                        <li><a href="post-lentil-soup.html" class="button">View Recipe</a></li>
+                                    </ul>
+                                </article>
+
+                            </section>
+
+                        <!-- Pagination -->
+                            <footer>
+                                <div class="pagination">
+                                    <!--<a href="#" class="previous">Prev</a>-->
+                                    <a href="#" class="page active">1</a>
+                                    <a href="#" class="page">2</a>
+                                    <a href="#" class="page">3</a>
+                                    <span class="extra">&hellip;</span>
+                                    <a href="#" class="page">8</a>
+                                    <a href="#" class="next">Next</a>
+                                </div>
+                            </footer>
+
+                    </div>
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        <section>
+                            <form method="post" action="#">
+                                <div class="fields">
+                                    <div class="field">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="email">Email</label>
+                                        <input type="text" name="email" id="email" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" /></li>
+                                </ul>
+                            </form>
+                        </section>
+                        <section class="split contact">
+                            <section class="alt">
+                                <h3>Address</h3>
+                                <p>Online Blog<br />
+                                yogieats.in</p>
+                            </section>
+                            <section>
+                                <h3>Email</h3>
+                                <p><a href="mailto:hello@yogieats.in">hello@yogieats.in</a></p>
+                            </section>
+                            <section>
+                                <h3>Social</h3>
+                                <ul class="icons alt">
+                                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <li><a href="#" class="icon brands alt fa-pinterest"><span class="label">Pinterest</span></a></li>
+                                    <li><a href="#" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+                                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                </ul>
+                            </section>
+                        </section>
+                    </footer>
+
+                <!-- Copyright -->
+                    <div id="copyright">
+                        <ul><li>&copy; Yogi Eats 2025</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Customized for <a href="https://yogieats.in">yogieats.in</a></li></ul>
+                    </div>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
