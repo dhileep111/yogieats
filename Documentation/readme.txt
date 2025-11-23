@@ -1,1 +1,0 @@
-Please open the index.html with your browser to read the help file.
