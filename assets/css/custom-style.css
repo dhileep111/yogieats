@@ -732,4 +732,21 @@ a.item-link{margin-top: 20px; display: inline-block}
 	.single-post01 .comments .comment .text .name {
 		font-size: 18px;
 	}
+
+	/* Fix Banner Image - Force Display */
+.banner-section-outer .banner-section .banner-section-image,
+.banner-section-outer .banner-section .banner-section-image figure,
+.banner-section-outer .banner-section .banner-section-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ensure banner image is never hidden on any screen size */
+@media screen and (max-width: 767px) {
+    .banner-section-outer .banner-section .banner-section-image img {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
 }
