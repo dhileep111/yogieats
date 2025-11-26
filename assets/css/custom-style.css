@@ -763,3 +763,16 @@ a.item-link{margin-top: 20px; display: inline-block}
 .banner-section [class*="col-"]:has(.banner-section-image) {
     display: block !important;
 }
+
+/* ULTIMATE FIX - Force ALL elements in banner section to show */
+.banner-section, 
+.banner-section *, 
+.banner-section *[class*="col"] {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.banner-section img {
+    max-width: 100% !important;
+    height: auto !important;
+}
