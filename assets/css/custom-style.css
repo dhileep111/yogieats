@@ -750,3 +750,16 @@ a.item-link{margin-top: 20px; display: inline-block}
     }
 }
 }
+
+/* Force banner image column to always show */
+.banner-section .col-lg-6.col-md-6.col-sm-12.col-xs-12:has(.banner-section-image) {
+    display: block !important;
+}
+
+/* Alternative - force any column with banner-section-image inside to show */
+.banner-section [class*="col-"] .banner-section-image {
+    display: block !important;
+}
+.banner-section [class*="col-"]:has(.banner-section-image) {
+    display: block !important;
+}
