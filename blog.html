@@ -4,15 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>Blog | YogiEats</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/mediaqueries.css" rel="stylesheet" type="text/css">
     <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/special-classes.css" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+<div class="sub-banner-section">
     <header>
         <div class="main_header">
             <div class="container-fluid">
@@ -38,90 +42,115 @@
             </div>
         </div>
     </header>
-
     <section class="banner-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h1 data-aos="fade-up">Wellness Journal</h1>
-                    <p data-aos="fade-up">Insights on Siddha nutrition, mindfulness, and digital balance.</p>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="banner-section-content">
+                        <h1 data-aos="fade-up">Our Blog</h1>
+                        <p data-aos="fade-right">Insights on Siddha nutrition, mindfulness, and digital balance.</p>
+                        <div class="btn_wrapper">
+                            <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span"> Blog</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <figure class="banner_left_top_shape left_shape mb-0"><img src="./assets/images/banner_left_top_shape.png" alt="" class="img-fluid"></figure>
+            <figure class="banner_left_bottom_shape left_shape mb-0"><img src="./assets/images/banner_left_bottom_shape.png" alt="" class="img-fluid"></figure>
+            <figure class="banner_right_top_shape right_shape mb-0"><img src="./assets/images/banner_right_top_shape.png" alt="" class="img-fluid"></figure>
+            <figure class="banner_right_bottom_shape right_shape mb-0"><img src="./assets/images/banner_right_bottom_shape.png" alt="" class="img-fluid"></figure>
+        </div>
+    </section>
+</div>
+
+<section class="blog_posts_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-4">
+                <div class="blog_posts_image position-relative">
+                    <figure class="mb-0"><img src="./assets/images/blog_posts_1.png" alt="" class="img-fluid"></figure>
+                    <div class="blog_posts_image_content">
+                        <span>NUTRITION</span>
+                        <h4>Why 'Gut Health' is the Secret to Mental Clarity</h4>
+                        <div class="icon_wrapper">
+                            <a href="./gut-health-clarity.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-4">
+                <div class="blog_posts_image position-relative">
+                    <figure class="mb-0"><img src="./assets/images/blog_posts_2.png" alt="" class="img-fluid"></figure>
+                    <div class="blog_posts_image_content">
+                        <span>DIGITAL DETOX</span>
+                        <h4>5 Simple Steps to Reduce Screen Time</h4>
+                        <div class="icon_wrapper">
+                            <a href="#" class="text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="blog_posts_section">
-        <div class="container">
+<section class="footer-section" id="footer_section">
+    <div class="container">
+        <div class="middle-portion">
             <div class="row">
-                
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="blog_posts_image position-relative">
-                        <figure class="mb-0"><img src="./assets/images/blog_posts_1.png" alt="" class="img-fluid"></figure>
-                        <div class="blog_posts_image_content">
-                            <span>NUTRITION</span>
-                            <h4>Why 'Gut Health' is the Secret to Mental Clarity</h4>
-                            <div class="icon_wrapper">
-                                <a href="./gut-health-clarity.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-lg-block d-none">
+                    <div class="footer_logo">
+                        <a href="./index.html" class="text-decoration-none"><figure class="mb-0"><img src="./assets/images/footer_logo.png" alt="Logo" class="img-fluid"></figure></a>
                     </div>
                 </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="blog_posts_image position-relative">
-                        <figure class="mb-0"><img src="./assets/images/blog_posts_2.png" alt="" class="img-fluid"></figure>
-                        <div class="blog_posts_image_content">
-                            <span>DIGITAL DETOX</span>
-                            <h4>5 Simple Steps to Reduce Screen Time Before Bed</h4>
-                            <div class="icon_wrapper">
-                                <a href="./reduce-screen-time.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="about_col">
+                        <h4>About Us</h4>
+                        <ul class="list-unstyled">
+                            <li><p>YogiEats combines ancient Siddha wisdom with modern mindfulness.</p></li>
+                            <li class="icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="icons"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="icons"><a href="#"><i class="fa-brands fa-linkedin-in mr-0"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="footer-section">
-        <div class="container">
-            <div class="middle-portion">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="footer_logo">
-                            <a href="./index.html"><img src="./assets/images/footer_logo.png" alt="Logo" class="img-fluid"></a>
-                        </div>
-                        <p style="color: white; margin-top: 20px;">YogiEats combines ancient Siddha wisdom with modern mindfulness.</p>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
+                    <div class="links_col">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="links_col">
-                            <h4>Quick Links</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About Us</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="./contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="contact_col">
-                            <h4>Contact Info</h4>
-                            <ul class="list-unstyled">
-                                <li class="contact_icons"><i class="fa-solid fa-phone"></i> +91 6379026089</li>
-                                <li class="contact_icons"><i class="fa-sharp fa-solid fa-envelope"></i> contact@yogieats.in</li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-sm-block d-none">
+                    <div class="contact_col">
+                        <h4>Contact Info</h4>
+                        <ul class="list-unstyled">
+                            <li class="contact_icons"><i class="fa-solid fa-phone"></i> <a href="tel:+916379026089" class="text-decoration-none">+91 6379026089</a></li>
+                            <li class="contact_icons"><i class="fa-sharp fa-solid fa-envelope"></i> <a href="mailto:contact@yogieats.in" class="text-decoration-none">contact@yogieats.in</a></li>
+                            <li class="mb-0"><i class="fa-solid fa-location-dot location"></i> <span>Coimbatore, Tamil Nadu</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="bottom-portion">
+        <div class="copyright col-xl-12">
+            <p>Copyright 2025, YogiEats.in All Rights Reserved.</p>
+        </div>
+    </div>
+    <div class="footer_shape right_shape">
+        <figure class="mb-0"><img src="./assets/images/footer_shape.png" alt="" class="img-fluid"></figure>
+    </div>
+</section>
 
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/animation.js"></script>
 </body>
 </html>
