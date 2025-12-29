@@ -30,48 +30,6 @@
     <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/special-classes.css" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <style>
-        .blog-standard-item { margin-bottom: 50px; background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: transform 0.3s; }
-        .blog-standard-item:hover { transform: translateY(-5px); }
-        .blog-standard-item .image { overflow: hidden; }
-        .blog-standard-item .image img { width: 100%; transition: all 0.5s; }
-        .blog-standard-item:hover .image img { transform: scale(1.05); }
-        .blog-standard-item .content { padding: 30px; }
-        .blog-meta { color: #6C55F9; font-size: 14px; margin-bottom: 15px; font-weight: 600; display: flex; align-items: center; }
-        .blog-meta i { margin-right: 5px; }
-        .blog-standard-item h3 { font-size: 26px; margin-bottom: 15px; font-weight: 700; color: #232323; line-height: 1.4; }
-        .blog-standard-item h3 a { color: #232323; text-decoration: none; transition: color 0.3s; }
-        .blog-standard-item h3 a:hover { color: #6C55F9; }
-        .blog-standard-item p { color: #666; line-height: 1.8; margin-bottom: 25px; }
-        
-        /* Sidebar Styling */
-        .sidebar-widget { background: #fff; padding: 30px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
-        .widget-title { font-size: 20px; font-weight: 700; margin-bottom: 25px; position: relative; padding-bottom: 15px; color: #232323; }
-        .widget-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 50px; height: 3px; background: #6C55F9; border-radius: 2px; }
-        
-        .search-form { position: relative; }
-        .search-form input { height: 50px; border-radius: 30px; border: 1px solid #eee; width: 100%; padding-left: 20px; background: #f9f9f9; }
-        .search-form button { position: absolute; right: 5px; top: 5px; height: 40px; width: 40px; background: #6C55F9; color: white; border: none; border-radius: 50%; transition: background 0.3s; }
-        .search-form button:hover { background: #5a43e3; }
-
-        .categories-list li { margin-bottom: 15px; border-bottom: 1px solid #f5f5f5; padding-bottom: 15px; }
-        .categories-list li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .categories-list li a { color: #555; display: flex; justify-content: space-between; text-decoration: none; font-weight: 500; transition: color 0.3s; }
-        .categories-list li a:hover { color: #6C55F9; }
-        
-        .recent-post-item { display: flex; align-items: center; margin-bottom: 20px; }
-        .recent-post-item:last-child { margin-bottom: 0; }
-        .recent-post-img { width: 80px; height: 80px; border-radius: 10px; overflow: hidden; margin-right: 15px; flex-shrink: 0; }
-        .recent-post-img img { width: 100%; height: 100%; object-fit: cover; }
-        .recent-post-info h6 { font-size: 16px; line-height: 1.4; margin-bottom: 5px; font-weight: 600; }
-        .recent-post-info h6 a { color: #232323; text-decoration: none; transition: color 0.3s; }
-        .recent-post-info h6 a:hover { color: #6C55F9; }
-        .recent-post-info span { font-size: 13px; color: #888; }
-
-        .tags-cloud a { display: inline-block; background: #f4f2ff; color: #6C55F9; padding: 8px 15px; border-radius: 20px; margin: 0 5px 10px 0; font-size: 14px; text-decoration: none; transition: all 0.3s; }
-        .tags-cloud a:hover { background: #6C55F9; color: #fff; }
-    </style>
 </head>
 
 <body>
@@ -122,153 +80,149 @@
     </section>
 </div>
 
-<section class="blog_posts_section" style="padding: 100px 0; background-color: #fcfcfc;">
+<div class="blog-area" style="padding: 100px 0;">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                
-                <div class="blog-standard-item" data-aos="fade-up">
-                    <div class="image">
-                        <a href="#"><img src="./assets/images/blog_1.jpg" alt="Gut Health" class="img-fluid"></a>
-                    </div>
-                    <div class="content">
-                        <div class="blog-meta">
-                            <span><i class="fa-solid fa-user"></i> Admin</span>
-                            <span class="mx-2">|</span>
-                            <span><i class="fa-solid fa-calendar-days"></i> Sep 20, 2025</span>
-                            <span class="mx-2">|</span>
-                            <span>Nutrition</span>
+        <div class="row custom-gutter">
+            
+            <div class="col-lg-8">
+                <div class="blog-inner">
+                    
+                    <div class="single-blog-wrap standard-postbox">
+                        <div class="blog-item">
+                            <div class="thumb">
+                                <a href="#"><img src="./assets/images/blog_1.jpg" alt="Gut Health" class="img-fluid"></a>
+                            </div>
+                            <div class="blog-details">
+                                <h5 class="blog-item-title"><a href="#">Why 'Gut Health' is the Secret to Mental Clarity</a></h5>
+                                <span><i class="fa fa-user"></i><span class="byline"> By Admin</span></span>
+                                <span><i class="fa-solid fa-clock"></i><span class="posted-on"> Sep 20, 2025</span></span>
+                                <p>In Siddha medicine, the gut is considered the second brain. If your digestion is sluggish, your mind will be too. Discover how simple dietary changes based on your body type can eliminate brain fog.</p>
+                                <div class="blog-btn">
+                                    <a class="read-more-btn" href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <h3><a href="#" class="text-decoration-none">Why 'Gut Health' is the Secret to Mental Clarity</a></h3>
-                        <p>In Siddha medicine, the gut is considered the second brain. If your digestion is sluggish, your mind will be too. Discover how simple dietary changes based on your body type can eliminate brain fog.</p>
-                        <div class="btn_wrapper">
-                            <a href="#" class="text-decoration-none getstarted_btn">Read More</a>
-                        </div>
                     </div>
-                </div>
 
-                <div class="blog-standard-item" data-aos="fade-up">
-                    <div class="image">
-                        <a href="#"><img src="./assets/images/blog_2.jpg" alt="Digital Detox" class="img-fluid"></a>
-                    </div>
-                    <div class="content">
-                        <div class="blog-meta">
-                            <span><i class="fa-solid fa-user"></i> Admin</span>
-                            <span class="mx-2">|</span>
-                            <span><i class="fa-solid fa-calendar-days"></i> Oct 05, 2025</span>
-                            <span class="mx-2">|</span>
-                            <span>Digital Detox</span>
-                        </div>
-                        <h3><a href="#" class="text-decoration-none">5 Simple Steps to Reduce Screen Time Before Bed</a></h3>
-                        <p>Blue light destroys your melatonin production. Learn 5 practical, non-judgmental ways to put the phone down 30 minutes earlier and reclaim your sleep quality.</p>
-                        <div class="btn_wrapper">
-                            <a href="#" class="text-decoration-none getstarted_btn">Read More</a>
+                    <div class="single-blog-wrap standard-postbox">
+                        <div class="blog-item">
+                            <div class="thumb">
+                                <a href="#"><img src="./assets/images/blog_2.jpg" alt="Digital Detox" class="img-fluid"></a>
+                            </div>
+                            <div class="blog-details">
+                                <h5 class="blog-item-title"><a href="#">5 Simple Steps to Reduce Screen Time Before Bed</a></h5>
+                                <span><i class="fa fa-user"></i><span class="byline"> By Admin</span></span>
+                                <span><i class="fa-solid fa-clock"></i><span class="posted-on"> Oct 05, 2025</span></span>
+                                <p>Blue light destroys your melatonin production. Learn 5 practical, non-judgmental ways to put the phone down 30 minutes earlier and reclaim your sleep quality.</p>
+                                <div class="blog-btn">
+                                    <a class="read-more-btn" href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="blog-standard-item" data-aos="fade-up">
-                    <div class="image">
-                        <a href="#"><img src="./assets/images/blog_3.jpg" alt="Stress Relief" class="img-fluid"></a>
-                    </div>
-                    <div class="content">
-                        <div class="blog-meta">
-                            <span><i class="fa-solid fa-user"></i> Admin</span>
-                            <span class="mx-2">|</span>
-                            <span><i class="fa-solid fa-calendar-days"></i> Oct 12, 2025</span>
-                            <span class="mx-2">|</span>
-                            <span>Mindfulness</span>
-                        </div>
-                        <h3><a href="#" class="text-decoration-none">Pranayama for Anxiety: The 4-7-8 Technique</a></h3>
-                        <p>When stress hits, your breath is your anchor. This simple ancient breathing technique acts as a tranquilizer for the nervous system. Here is how to do it.</p>
-                        <div class="btn_wrapper">
-                            <a href="#" class="text-decoration-none getstarted_btn">Read More</a>
+                    <div class="single-blog-wrap standard-postbox">
+                        <div class="blog-item">
+                            <div class="thumb">
+                                <a href="#"><img src="./assets/images/blog_3.jpg" alt="Stress Relief" class="img-fluid"></a>
+                            </div>
+                            <div class="blog-details">
+                                <h5 class="blog-item-title"><a href="#">Pranayama for Anxiety: The 4-7-8 Technique</a></h5>
+                                <span><i class="fa fa-user"></i><span class="byline"> By Admin</span></span>
+                                <span><i class="fa-solid fa-clock"></i><span class="posted-on"> Oct 12, 2025</span></span>
+                                <p>When stress hits, your breath is your anchor. This simple ancient breathing technique acts as a tranquilizer for the nervous system. Here is how to do it.</p>
+                                <div class="blog-btn">
+                                    <a class="read-more-btn" href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="pagination_wrapper" style="margin-top: 50px; text-align: center;">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-arrow-right"></i></a></li>
-                    </ul>
-                </div>
+                    <div class="yogastic-pagination text-center">
+                        <nav class="navigation pagination">
+                            <div class="nav-links">
+                                <span aria-current="page" class="page-numbers current">1</span>
+                                <a class="page-numbers" href="#">2</a>
+                                <a class="next page-numbers" href="#"><i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </nav>
+                    </div>
 
+                </div>
             </div>
 
-            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                <div class="sidebar-wrapper" style="padding-left: 20px;">
+            <div class="col-lg-4 sidebar-blog right-side">
+                <aside class="sidebar-area sidebar-right">
                     
-                    <div class="sidebar-widget">
-                        <h4 class="widget-title">Search</h4>
-                        <form class="search-form">
+                    <div class="widget blog-sidebar widget_search">
+                        <form role="search" method="get" class="search-form">
                             <div class="form-group">
-                                <input type="text" placeholder="Search here...">
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <input type="text" class="form-control" placeholder="Search here...">
+                                <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
                             </div>
                         </form>
                     </div>
 
-                    <div class="sidebar-widget">
-                        <h4 class="widget-title">Categories</h4>
-                        <ul class="list-unstyled categories-list">
-                            <li><a href="#">Siddha Nutrition <span>(5)</span></a></li>
-                            <li><a href="#">Digital Detox <span>(3)</span></a></li>
-                            <li><a href="#">Mindfulness <span>(7)</span></a></li>
-                            <li><a href="#">Yoga Asanas <span>(4)</span></a></li>
-                            <li><a href="#">Sleep Hygiene <span>(2)</span></a></li>
+                    <div class="widget blog-sidebar widget_recent_entries">
+                        <h4 class="widget-title">Recent Posts</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Why 'Gut Health' is the Secret to Mental Clarity</a></li>
+                            <li><a href="#">5 Simple Steps to Reduce Screen Time</a></li>
+                            <li><a href="#">Pranayama for Anxiety: The 4-7-8 Technique</a></li>
+                            <li><a href="#">The Benefits of Siddha Nutrition</a></li>
                         </ul>
                     </div>
 
-                    <div class="sidebar-widget">
-                        <h4 class="widget-title">Recent Posts</h4>
-                        
-                        <div class="recent-post-item">
-                            <div class="recent-post-img">
-                                <img src="./assets/images/blog_1.jpg" alt="">
-                            </div>
-                            <div class="recent-post-info">
-                                <h6><a href="#">Gut Health & Mental Clarity</a></h6>
-                                <span>Sep 20, 2025</span>
-                            </div>
-                        </div>
-
-                        <div class="recent-post-item">
-                            <div class="recent-post-img">
-                                <img src="./assets/images/blog_2.jpg" alt="">
-                            </div>
-                            <div class="recent-post-info">
-                                <h6><a href="#">Reduce Screen Time</a></h6>
-                                <span>Oct 05, 2025</span>
-                            </div>
-                        </div>
-
-                        <div class="recent-post-item">
-                            <div class="recent-post-img">
-                                <img src="./assets/images/blog_3.jpg" alt="">
-                            </div>
-                            <div class="recent-post-info">
-                                <h6><a href="#">Pranayama for Anxiety</a></h6>
-                                <span>Oct 12, 2025</span>
-                            </div>
-                        </div>
-
+                    <div class="widget blog-sidebar widget_categories">
+                        <h4 class="widget-title">Categories</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Digital Detox <span>(3)</span></a></li>
+                            <li><a href="#">Nutrition <span>(5)</span></a></li>
+                            <li><a href="#">Mindfulness <span>(4)</span></a></li>
+                            <li><a href="#">Yoga <span>(6)</span></a></li>
+                        </ul>
                     </div>
 
-                    <div class="sidebar-widget">
-                        <h4 class="widget-title">Popular Tags</h4>
-                        <div class="tags-cloud">
+                    <div class="widget blog-sidebar widget_tag_cloud">
+                        <h4 class="widget-title">Tags</h4>
+                        <div class="tagcloud">
                             <a href="#">Health</a>
-                            <a href="#">Meditation</a>
-                            <a href="#">Organic</a>
-                            <a href="#">Focus</a>
-                            <a href="#">Lifestyle</a>
+                            <a href="#">Wellness</a>
                             <a href="#">Siddha</a>
-                            <a href="#">Detox</a>
+                            <a href="#">Focus</a>
+                            <a href="#">Sleep</a>
                         </div>
                     </div>
 
+                </aside>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section class="subscribe_section">
+    <div class="container">
+        <div class="subscribe_background_image">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" data-aos="fade-right">
+                    <div class="subscribe_content">
+                        <h5>Subscribe now</h5>
+                        <h2>Get the Latest Updates With Our Newsletter</h2>
+                        <form method="POST">
+                            <div class="form-row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="email" name="email" id="emailadd" class="form-control" placeholder="Enter You Email">
+                                    <button type="submit" name="btnsubmit" id="submitbutton">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                    <figure class="subscribe_image mb-0">
+                        <img src="./assets/images/subscribe_image.png" alt="">
+                    </figure>
                 </div>
             </div>
         </div>
