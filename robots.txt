@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yogieats.in/sitemap.xml
