@@ -2,84 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Recommended Resources | YogiEats</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Siddha Resources | YogiEats</title>
+    
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/mediaqueries.css" rel="stylesheet" type="text/css">
+    
+    <style>
+        /* Modern Mobile-First Fixes */
+        .resource-card {
+            background: #fff;
+            border-radius: 25px 0 25px 0;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border: 1px solid #eee;
+            height: 100%;
+        }
+        .resource-card:hover {
+            transform: translateY(-10px);
+            border-color: #ff8c00;
+        }
+        .resource-icon {
+            font-size: 45px;
+            color: #ff8c00;
+            margin-bottom: 20px;
+        }
+        /* Ensures the button matches your site design */
+        .wa-btn {
+            background-color: #25D366;
+            color: white !important;
+            border-radius: 30px 0 30px 0;
+            padding: 12px 25px;
+            display: inline-block;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-    <div class="sub-banner-section">
-        <header>
-            <div class="main_header">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-light p-0">
-                        <a class="navbar-brand" href="./index.html">
-                            <figure class="mb-0"><img src="./assets/images/yogieats_logo.png" alt="Logo" style="max-height: 90px;"></figure>
-                        </a>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
-                                <li class="nav-item active"><a class="nav-link contact_us" href="./resources.html">Resources</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+
+<div class="sub-banner-section">
+    <header>
+        <div class="main_header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <a class="navbar-brand" href="./index.html">
+                        <figure class="mb-0"><img src="./assets/images/yogieats_logo.png" alt="Logo" style="max-height: 70px;"></figure>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog/AI</a></li>
+                            <li class="nav-item active"><a class="nav-link contact_us" href="./resources.html">Resources</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="banner-section">
+        <div class="container text-center">
+            <h1 style="color:white; font-size: 2.5rem;">Siddha Resources</h1>
+            <p style="color:white;">Expertly curated tools for your wellness journey.</p>
+        </div>
+    </section>
+</div>
+
+<section class="services_section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="resource-card text-center">
+                    <div class="resource-icon"><i class="fa-solid fa-bottle-water"></i></div>
+                    <h3>Copper Water Bottle</h3>
+                    <p>Perfect for balancing the Pitta dosha. We recommend specific non-coated pure copper vessels.</p>
+                    <a href="https://wa.me/916379026089?text=Hi%20Dhileepan,%20I%20want%20a%20recommendation%20for%20a%20Copper%20Bottle." class="wa-btn text-decoration-none"><i class="fa-brands fa-whatsapp"></i> Ask for Best Price</a>
                 </div>
             </div>
-        </header>
-        <section class="banner-section">
-            <div class="container text-center">
-                <h1 style="color: white;">Recommended Resources</h1>
-                <p style="color: white;">Curated Siddha-approved tools and supplements for your wellness journey.</p>
+
+            <div class="col-12 col-md-4">
+                <div class="resource-card text-center">
+                    <div class="resource-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+                    <h3>Organic Triphala</h3>
+                    <p>The core of Siddha detoxification. Get my vetted list of organic, chemical-free suppliers.</p>
+                    <a href="https://wa.me/916379026089?text=Hi%20Dhileepan,%20could%20you%20recommend%20an%20organic%20Triphala%20brand?" class="wa-btn text-decoration-none"><i class="fa-brands fa-whatsapp"></i> Get Brand List</a>
+                </div>
             </div>
-        </section>
+
+            <div class="col-12 col-md-4">
+                <div class="resource-card text-center">
+                    <div class="resource-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>Mindfulness Journal</h3>
+                    <p>Track your digital detox progress. A simple tool to reclaim your focus from the screen.</p>
+                    <a href="https://wa.me/916379026089?text=Hi%20Dhileepan,%20tell%20me%20more%20about%20the%20Digital%20Detox%20Journal." class="wa-btn text-decoration-none"><i class="fa-brands fa-whatsapp"></i> View My Setup</a>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <section class="services_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="services_box_content text-center p-4 border rounded shadow-sm">
-                        <i class="fa-solid fa-droplet mb-3" style="font-size: 40px; color: #ff8c00;"></i>
-                        <h3>Copper Water Vessel</h3>
-                        <p>Essential for Pitta balance. Storing water in copper overnight ionizes the water naturally.</p>
-                        <a href="YOUR_AFFILIATE_LINK_HERE" target="_blank" class="getstarted_btn text-decoration-none">Buy on Amazon</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="services_box_content text-center p-4 border rounded shadow-sm">
-                        <i class="fa-solid fa-leaf mb-3" style="font-size: 40px; color: #ff8c00;"></i>
-                        <h3>Organic Triphala</h3>
-                        <p>The ultimate Siddha detoxifier. Supports digestion and colon health for all body types.</p>
-                        <a href="YOUR_AFFILIATE_LINK_HERE" target="_blank" class="getstarted_btn text-decoration-none">Buy on Amazon</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="services_box_content text-center p-4 border rounded shadow-sm">
-                        <i class="fa-solid fa-jar mb-3" style="font-size: 40px; color: #ff8c00;"></i>
-                        <h3>Pure A2 Desi Ghee</h3>
-                        <p>A "Sattvic" superfood. Perfect for lubrication and enhancing the nutritional value of your meals.</p>
-                        <a href="YOUR_AFFILIATE_LINK_HERE" target="_blank" class="getstarted_btn text-decoration-none">Buy on Amazon</a>
-                    </div>
-                </div>
-            </div>
+<section class="subscribe_section py-5">
+    <div class="container text-center">
+        <div class="resource-card" style="background-color: #f4f7ff; border: 2px dashed #ff8c00;">
+            <h5>🎁 FREE DIGITAL WELLNESS GUIDE</h5>
+            <h2>Reclaim 2 Hours of Your Day</h2>
+            <p>Download my "7-Day Digital Detox Blueprint" and start your journey to focus today.</p>
+            <form action="https://formspree.io/f/mbdjkovo" method="POST" class="mt-4">
+                <input type="email" name="email" class="form-control mb-3" placeholder="Enter your best email" required style="border-radius: 15px;">
+                <button type="submit" class="getstarted_btn" style="border:none;">Email Me the PDF</button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="aboutus_section py-5 text-center">
-        <div class="container">
-            <h2>Support My Japan Wellness Tour</h2>
-            <p>Every purchase made through these links helps fund my dream trip to Japan to study Zen mindfulness and bring it back to you. Thank you for your support!</p>
-            <div class="btn_wrapper mt-3">
-                <a href="https://www.buymeacoffee.com/YOUR_USERNAME" target="_blank" class="getstarted_btn text-decoration-none">Support the Trip</a>
-            </div>
-        </div>
-    </section>
+<footer class="footer-section py-4 text-center">
+    <p>© 2026 YogiEats - Helping you bridge ancient wisdom with modern life. 🌿</p>
+</footer>
+
 </body>
 </html>
