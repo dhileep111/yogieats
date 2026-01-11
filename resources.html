@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <script>
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "uobijvcu30");
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFYFPHLN4M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JFYFPHLN4M');
+    </script>
+
     <title>Siddha Resources | YogiEats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta charset="utf-8">
+    <meta name="description" content="Curated tools for your wellness journey. Copper bottles, Triphala recommendations, and digital detox journals recommended by YogiEats.">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
     
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/mediaqueries.css" rel="stylesheet" type="text/css">
-    
+    <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/special-classes.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
-        /* Modern Mobile-First Fixes */
         .resource-card {
             background: #fff;
             border-radius: 25px 0 25px 0;
@@ -24,39 +44,51 @@
         }
         .resource-card:hover {
             transform: translateY(-10px);
-            border-color: #ff8c00;
+            border-color: #6C55F9; /* Updated to brand color */
         }
         .resource-icon {
             font-size: 45px;
-            color: #ff8c00;
+            color: #6C55F9; /* Updated to brand color */
             margin-bottom: 20px;
         }
-        /* Ensures the button matches your site design */
         .wa-btn {
             background-color: #25D366;
             color: white !important;
-            border-radius: 30px 0 30px 0;
+            border-radius: 30px;
             padding: 12px 25px;
             display: inline-block;
             font-weight: 600;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .wa-btn:hover {
+            background-color: #128C7E;
+            text-decoration: none;
         }
     </style>
 </head>
-<body>
 
+<body>
 <div class="sub-banner-section">
     <header>
         <div class="main_header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light p-0">
                     <a class="navbar-brand" href="./index.html">
-                        <figure class="mb-0"><img src="./assets/images/yogieats_logo.png" alt="Logo" style="max-height: 70px;"></figure>
+                        <figure class="mb-0"><img src="./assets/images/yogieats_logo.png" alt="Logo" style="max-height: 90px;"></figure>
                     </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog/AI</a></li>
-                            <li class="nav-item active"><a class="nav-link contact_us" href="./resources.html">Resources</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link contact_us" href="./contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -64,63 +96,131 @@
         </div>
     </header>
     <section class="banner-section">
-        <div class="container text-center">
-            <h1 style="color:white; font-size: 2.5rem;">Siddha Resources</h1>
-            <p style="color:white;">Expertly curated tools for your wellness journey.</p>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="banner-section-content text-center">
+                        <h1 data-aos="fade-up">Siddha Resources</h1>
+                        <p data-aos="fade-right" style="color: white;">Expertly curated tools for your wellness journey.</p>
+                        <div class="btn_wrapper">
+                            <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"></i><span class="sub_span"> Resources</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </div>
 
-<section class="services_section py-5">
+<section class="services_section" style="padding: 100px 0;">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up">
                 <div class="resource-card text-center">
                     <div class="resource-icon"><i class="fa-solid fa-bottle-water"></i></div>
                     <h3>Copper Water Bottle</h3>
                     <p>Perfect for balancing the Pitta dosha. We recommend specific non-coated pure copper vessels.</p>
-                    <a href="https://wa.me/916379026089?text=Hi%20Dhileepan,%20I%20want%20a%20recommendation%20for%20a%20Copper%20Bottle." class="wa-btn text-decoration-none"><i class="fa-brands fa-whatsapp"></i> Ask for Best Price</a>
+                    <a href="https://wa.me/916379026089?text=Hi%20Dhileepan,%20I%20want%20a%20recommendation%20for%20a%20Copper%20Bottle." class="wa-btn text-decoration-none" target="_blank"><i class="fa-brands fa-whatsapp"></i> Ask for Best Price</a>
                 </div>
             </div>
 
-            <div class="col-12 col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="resource-card text-center">
                     <div class="resource-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
                     <h3>Organic Triphala</h3>
                     <p>The core of Siddha detoxification. Get my vetted list of organic, chemical-free suppliers.</p>
-                    <a href="https://wa.me/916379026089?text=Hi%20Dhileepan,%20could%20you%20recommend%20an%20organic%20Triphala%20brand?" class="wa-btn text-decoration-none"><i class="fa-brands fa-whatsapp"></i> Get Brand List</a>
+                    <a href="https://wa.me/916379026089?text=Hi%20Dhileepan,%20could%20you%20recommend%20an%20organic%20Triphala%20brand?" class="wa-btn text-decoration-none" target="_blank"><i class="fa-brands fa-whatsapp"></i> Get Brand List</a>
                 </div>
             </div>
 
-            <div class="col-12 col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="resource-card text-center">
                     <div class="resource-icon"><i class="fa-solid fa-book-open"></i></div>
                     <h3>Mindfulness Journal</h3>
                     <p>Track your digital detox progress. A simple tool to reclaim your focus from the screen.</p>
-                    <a href="https://wa.me/916379026089?text=Hi%20Dhileepan,%20tell%20me%20more%20about%20the%20Digital%20Detox%20Journal." class="wa-btn text-decoration-none"><i class="fa-brands fa-whatsapp"></i> View My Setup</a>
+                    <a href="https://wa.me/916379026089?text=Hi%20Dhileepan,%20tell%20me%20more%20about%20the%20Digital%20Detox%20Journal." class="wa-btn text-decoration-none" target="_blank"><i class="fa-brands fa-whatsapp"></i> View My Setup</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="subscribe_section py-5">
-    <div class="container text-center">
-        <div class="resource-card" style="background-color: #f4f7ff; border: 2px dashed #ff8c00;">
-            <h5>🎁 FREE DIGITAL WELLNESS GUIDE</h5>
-            <h2>Reclaim 2 Hours of Your Day</h2>
-            <p>Download my "7-Day Digital Detox Blueprint" and start your journey to focus today.</p>
-            <form action="https://formspree.io/f/mbdjkovo" method="POST" class="mt-4">
-                <input type="email" name="email" class="form-control mb-3" placeholder="Enter your best email" required style="border-radius: 15px;">
-                <button type="submit" class="getstarted_btn" style="border:none;">Email Me the PDF</button>
-            </form>
+<section class="subscribe_section">
+    <div class="container">
+        <div class="subscribe_background_image" style="background: #f4f2ff; border-radius: 20px; padding: 50px;">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h5 style="color: #6C55F9;">🎁 FREE DIGITAL WELLNESS GUIDE</h5>
+                    <h2 style="font-weight: 700; margin-bottom: 20px;">Reclaim 2 Hours of Your Day</h2>
+                    <p style="margin-bottom: 30px;">Download my "7-Day Digital Detox Blueprint" and start your journey to focus today.</p>
+                    <form action="https://formspree.io/f/mbdjkovo" method="POST" class="d-flex justify-content-center">
+                        <div style="max-width: 500px; width: 100%;">
+                            <input type="email" name="email" class="form-control mb-3" placeholder="Enter your best email" required style="height: 50px; border-radius: 30px; padding-left: 20px;">
+                            <button type="submit" class="getstarted_btn" style="width: 100%; border: none;">Email Me the PDF</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<footer class="footer-section py-4 text-center">
-    <p>© 2026 YogiEats - Helping you bridge ancient wisdom with modern life. 🌿</p>
-</footer>
+<section class="footer-section" id="footer_section">
+    <div class="container">
+        <div class="middle-portion">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-lg-block d-none">
+                    <div class="footer_logo">
+                        <a href="./index.html"><figure class="mb-0"><img src="./assets/images/footer_logo.png" alt="Logo" class="img-fluid"></figure></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="about_col">
+                        <h4>About Us</h4>
+                        <ul class="list-unstyled">
+                            <li><p>YogiEats combines ancient Siddha wisdom with modern mindfulness.</p></li>
+                            <li class="icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="icons"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="icons"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
+                    <div class="links_col">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-sm-block d-none">
+                    <div class="contact_col">
+                        <h4>Contact Info</h4>
+                        <ul class="list-unstyled">
+                            <li class="contact_icons"><i class="fa-solid fa-phone"></i> <a href="tel:+916379026089">+91 6379026089</a></li>
+                            <li class="contact_icons"><i class="fa-sharp fa-solid fa-envelope"></i> <a href="mailto:contact@yogieats.in">contact@yogieats.in</a></li>
+                            <li class="mb-0"><i class="fa-solid fa-location-dot location"></i> <span>Coimbatore, TN</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-portion">
+        <div class="copyright col-xl-12">
+            <p>Copyright 2025, YogiEats.in All Rights Reserved. | <a href="./privacy-policy.html" style="color: #fff; opacity: 0.8; text-decoration: none;">Privacy Policy</a></p>
+        </div>
+    </div>
+    <div class="footer_shape right_shape"><figure class="mb-0"><img src="./assets/images/footer_shape.png" alt="" class="img-fluid"></figure></div>
+</section>
 
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/animation.js"></script>
 </body>
 </html>
